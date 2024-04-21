@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="Header">
+      <h1 id="title">My Survey Form</h1>
+      <p id="description">This is my first WebDev Project</p>
+    </header>
+    <main>
+      <form id="survey-form" class="form">
+        <article class="questions">
+        <Label id="name-label" for="name">Name</Label>
+        <input name="name" type="text" required id="name" placeholder="Enter your name">
+        </article>
+        <article class="questions">
+        <Label id="email-label" for="email">Email</Label>
+        <input name="email" type="email" required id="email" placeholder="Enter your email">
+        </article>
+        <article class="questions">
+        <Label id="number-label" for="age">Age</Label>
+        <input name="number" type="number" id="number" placeholder="Enter your age" min="10" max="99" required>
+        </article>
+        <article class="questions">
+          <p>Select your career goal</p>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select your ambition</option>
+            <option>Doctor</option>
+            <option>Enginner</option>
+            <option>Policeman</option>
+            <option>Soldier</option>
+            <option>Lawyer</option>
+          </select>
+        </article>
+        <article class="questions">
+          <p>Choose your Gender</p>
+          <label><input type="radio" value="Male" name="gender">Male</label>
+          <label><input type="radio" value="Female" name="gender">Female</label>
+          <label><input type="radio" value="NA" name="gender">Prefer not to say</label>
+        </article>
+        <article class="questions">
+          <p>Select your favourite color</p>
+          <label><input type="checkbox" value="Red" name="color">Red</label>
+          <label><input type="checkbox" value="Green" name="color">Green</label>
+          <label><input type="checkbox" value="Blue" name="color">Blue</label>
+        </article>
+        <article class="questions">
+          <p>Enter your comments here...</p>
+          <textarea placeholder="Enter your suggestions here..." name="comments" id="comments"></textarea>
+        </article>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
